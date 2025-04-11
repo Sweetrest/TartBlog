@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.company-name {
+  font-family: 'Pixelify Sans', sans-serif;
+}
+:root {
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --scrollbar-track-color: #F2F2F2;
+  --scrollbar-thumb-color: #FF5C00;
+  --scrollbar-thumb-hover-color: #F0AA17;
+}
+
+[data-theme='dark'] {
+  --background: #362B44;
+  --foreground: #FFFFFF;
+  --scrollbar-track-color: #9785AD;
+  --scrollbar-thumb-color: #7200A8;
+  --scrollbar-thumb-hover-color: #E9A000;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
